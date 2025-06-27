@@ -1,0 +1,8 @@
+cd C:\xampp\htdocs\TP1-entorno_de_trabajo_agil   // Entra a la carpeta de tu proyecto
+git init                                         // Inicializa un repositorio Git local
+git remote add origin https://github.com/Danzel-Burki/TP1-entorno_de_trabajo_agil.git   // Conecta con el repo de GitHub
+git pull origin main                             // Descarga y fusiona los cambios de la rama main desde GitHub
+git add .                                        // Prepara todos los archivos para ser confirmados
+git commit -m "prueba"                           // Crea un commit con el mensaje "prueba"
+git push -u origin main                          // Sube los cambios a GitHub y establece la rama principal
+
