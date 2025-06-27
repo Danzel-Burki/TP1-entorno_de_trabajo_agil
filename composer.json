@@ -1,5 +1,18 @@
 {
-  "require-dev": {
-    "phpunit/phpunit": "^10"
-  }
+    "name": "danzel/tp1",
+    "description": "Trabajo Práctico de Sistemas de Información II - Automatización de Pruebas",
+    "autoload": {
+        "psr-4": {
+            "Danzel\\Tp1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danzel Blotz Burki",
+            "email": "danzelblotzburki@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^12.2"
+    }
 }
