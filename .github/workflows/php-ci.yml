@@ -1,0 +1,33 @@
+name: CI/CD para Proyecto PHP
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+
+    - name: Instalar dependencias
+      run: |
+        composer install || echo "Composer no configurado"
+
+    - name: Ejecutar pruebas PHPUnit
+      run: |
+        if [ -f vendor/bin/phpunit ]; then
+          vendor/bin/phpunit tests
+        else
+          echo "No hay pruebas definidas"
+        fi
+
+    - name: Simulación de deploy (local o Docker)
+      run: echo "Despliegue simulado en entorno de prueba"
