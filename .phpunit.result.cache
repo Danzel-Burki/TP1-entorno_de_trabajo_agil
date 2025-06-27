@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"EjemploTest::testSuma":0,"Tests\\EjemploTest::testSuma":0.006,"Tests\\CargaNotasTest::testNotaValida":0.009,"Tests\\CargaNotasTest::testAccesoSoloDocente":0.006,"Tests\\PreinscripcionTest::testPrecondicionesValidas":0.006,"Tests\\PreinscripcionTest::testPostcondicionRegistro":0.005,"CalculadoraTest::testSuma":0.592}}

@@ -1,3 +1,4 @@
+Parte 2: Implementación y CI/CD:
 cd C:\xampp\htdocs\TP1-entorno_de_trabajo_agil   // Entra a la carpeta de tu proyecto
 git init                                         // Inicializa un repositorio Git local
 git remote add origin https://github.com/Danzel-Burki/TP1-entorno_de_trabajo_agil.git   // Conecta con el repo de GitHub
@@ -6,4 +7,18 @@ git add .                                        // Prepara todos los archivos p
 git commit -m "prueba"                           // Crea un commit con el mensaje "prueba"
 git push -u origin main                          // Sube los cambios a GitHub y establece la rama principal
 
+
+Parte 4: Evaluación de calidad y cobertura:
+1. Ir a la ruta del proyecto: C:\xampp\htdocs\TP1-entorno_de_trabajo_agil
+2. Ejecutar:
+   php phpunit-10.phar --configuration phpunit.xml --coverage-html coverage/html --coverage-text=coverage/coverage.txt
+3. Revisar los resultados:
+   - Visual en coverage/html/index.html
+   - Texto plano en coverage/coverage.txt
+4. Consultar errores en resultado.txt
+5. Para volver a ejecutar, borrar cache y repetir el paso 2
+
+
+
 https://github.com/Danzel-Burki/TP1-entorno_de_trabajo_agil.git
+
